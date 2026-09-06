@@ -1,1 +1,90 @@
 @import "tailwindcss";
+
+
+
+@import "tailwindcss";
+
+:root {
+    --background: #F8F8F8;
+    --foreground: #FFFFFF;
+
+    --primary: #4ABAFC;
+    --primary-hover: #009DDC;
+
+    --text-color: #030A03;
+    --text-secondary: #282829;
+    --text-muted: #67676F;
+
+    --success: #11FF29;
+    --danger: #FF4346;
+    --gradient: #EC4899;
+
+    --shadow-sm:  0px 2px 5px #030A0355;
+    --shadow-normal: 0px 4px 5px #030A0355;
+    --shadow-md: 0px 6px 5px #030A0355;
+    --shadow-lg: 0px 8px 5px #030A0355;
+
+    --border: #030A03;
+}
+
+.dark {
+    --background: #021024;
+    --foreground: #0D1B2A;
+
+    --primary: #4ABAFC;
+    --primary-hover: #009DDC;
+
+    --text-color: #E7E7E7;
+    --text-secondary: #C3C3C3;
+    --text-muted: #67676F;
+
+    --success: #11FF29;
+    --danger: #FF4346;
+    --gradient: #EC4899;
+
+    --shadow-sm:  0px 2px 5px #E7E7E755;
+    --shadow-normal: 0px 4px 5px #E7E7E755;
+    --shadow-md: 0px 6px 5px #E7E7E755;
+    --shadow-lg: 0px 8px 5px #E7E7E755;
+
+    --border: #E7E7E7;
+}
+
+@theme {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+
+    --color-primary: var(--primary);
+    --color-primary-hover: var(--primary-hover);
+
+    --color-text-color: var(--text-color);
+    --color-text-secondary: var(--text-secondary);
+    --color-text-muted: var(--text-muted);
+
+    --color-success: var(--success);
+    --color-danger: var(--danger);
+    --color-gradient: var(--gradient);
+
+    --font-clashgrotesk: "ClashGrotesk";
+    --font-geologica: "Geologica";
+
+    --shadow-sm: var(--shadow-sm);
+    --shadow-normal: var(--shadow-normal);
+    --shadow-md: var(--shadow-md);
+    --shadow-lg: var(--shadow-lg);
+}
+
+@font-face {
+    font-family: "ClashGrotesk";
+    src: url('./assets/fonts/ClashGrotesk/ClashGrotesk-Variable.ttf') format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Geologica";
+    src: url('./assets/fonts/Geologica/Geologica.ttf') format("truetype");
+    font-weight: 100 900;
+    font-size: normal;
+    font-display: swap;
+}
